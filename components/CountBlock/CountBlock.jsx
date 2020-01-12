@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './../button/Button';
-import classes from './Settings.module.css'
+import classes from './CountBlock.module.css'
 
 class CountBlock extends React.Component {
 	countValue = React.createRef();
@@ -14,6 +14,7 @@ class CountBlock extends React.Component {
 	}
 
 	render(){
+		let classForValue;
 		let value;// Проверка рендера текста или числа 
 		if(this.props.state.pressedSet){
 
@@ -29,16 +30,18 @@ class CountBlock extends React.Component {
 		else {
 
 			if (this.props.state.disabled){
-				value = "Incorrect value!"
+				value = "Incorrect value!";
+				classForValue = classes.errorValue;
 			} else {
-				value = "enter values and press 'set'"
+				value = "enter values and press 'set'";
+				classForValue = null
 			}
 
 		}
 
 		return (
-			<div className={classes.settings}>
-				<div className={classes.setValues}>
+			<div className={classes.buttonsBlock}>
+				<div className={`${classes.buttonsValues} ${classForValue}` }>
 					{value}
 				</div>
 				<div>

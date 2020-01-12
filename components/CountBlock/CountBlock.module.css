@@ -1,0 +1,26 @@
+.buttonsBlock{
+	padding: 10px;
+	width: 100%;
+}
+
+.buttonsValues{
+	padding: 5px;
+	border: 2px solid blue;
+	border-radius: 10px;
+	height: 130px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.setValues input{
+	margin-bottom: 10px;
+}
+
+.errorValue{
+	color: red;
+}
