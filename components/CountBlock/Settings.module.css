@@ -1,0 +1,14 @@
+.settings{
+	padding: 10px;
+	width: 320px;
+}
+
+.setValues{
+	padding: 5px;
+	border: 2px solid blue;
+	border-radius: 10px;
+}
+
+.setValues input{
+	margin-bottom: 10px;
+}

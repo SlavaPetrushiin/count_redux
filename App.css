@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+
+.App{
+	margin: 0 auto;
+	padding: 10px;
+	width: 750px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapperSettings{
+	padding: 10px;
+	width: 340px;
+	border: 2px solid blue;
+}
+
+.error{
+	background-color: red;
+}
